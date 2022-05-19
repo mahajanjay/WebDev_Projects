@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var message = "";
+        var answer = 5;
+        var counter = 1;
+
+        do {
+
+            if (counter <= 3) {
+
+                var input = prompt("Enter the no.");
+                input = parseInt(input);
+                if(input==answer){
+                    document.write("Your Answer Is Right");
+                   // message = "Your Answer Is Right";
+                    //document.getElementById("result").innerHTML = "Your Answer Is Right";
+                    break;
+                }
+                else{
+                    alert("Nope-wrong!");
+                }
+
+                counter++;
+
+            }
+            else{
+                document.write("You Have Exceeded The Limit");
+                //message = "You Have Exceeded The Limit";
+                //document.getElementById("result").innerHTML = "You Have Exceeded The Limit";
+                break;
+            }
+
+        } while (input != answer);
+    </script>
+
+</head>
+
+<body>
+    <h1>Guess The Number</h1>
+    <p id="result"></p>
+</body>
+
+</html>

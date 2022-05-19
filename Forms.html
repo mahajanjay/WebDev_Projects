@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Forms</title>
+</head>
+<body>
+	<h1>Form with get action</h1>
+	<p>
+	<form method="get" action="EmbededContents.html">
+		<fieldset>
+			<legend>Enter Your details</legend>
+            <br>
+		    <p>
+		    	<label for="FirstName">FirstName: </label>
+		        <input type="text" id="FirstName" placeholder="Enter your First Name" name="FirstName">
+		    </p>
+		<br><br>
+		    <p>
+		    	<label for="LastName">LastName: </label>
+		        <input type="text" id="LastName" placeholder="Enter your Last Name" name="LastName">
+		    </p>
+		<br><br>
+		    <p>
+		    	<label for="subject">subject: </label>
+		        <input type="text" id="subject" placeholder="Enter your subject" name="subject">
+		    </p>
+		</fieldset>    
+	</p>
+	    <fieldset>
+	    	<legend>Put Your Comments Here</legend>
+		    <p>
+			    <textarea id="textarea_comments" rows="5" cols="50" placeholder="Put Your Comments Here...">	
+		        </textarea>
+		    </p>
+		</fieldset>    
+		<p>
+		<input type="submit" name="Submit">
+		<input type="reset" value="Clear Form">
+		</p>
+	</form>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+
+<style>
+    body{
+        width: 940px;
+        margin: 0 auto;
+        font-family: "Georgia", Arial, sans-serif;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    nav li{
+        display: inline-block;
+        margin: 0 0 0 50px;
+        width: 100px;
+    }
+
+    header, footer{
+        padding: 0;
+        text-align: center;
+    }
+
+    .aleft{
+        float: left;
+    }
+
+    .aright{
+        float: right;
+    }
+
+
+    header,section,article,aside,footer{
+            display: block;
+    }
+
+    section{
+        float: left;
+        width: 500px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-left: 2px dotted rgb(189, 24, 24) ;
+        border-right: 2px dotted rgb(189, 24, 24) ;
+    }
+
+    footer{
+        clear: both;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>Page Layout</h1>
+    </header>
+    <hr>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <hr>
+    <aside class="aleft">
+        <figure>
+            <img src="D:\photos\wallpapers\flat.jpg" alt="coder" height="100px" width="100px">
+        </figure>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </aside>
+
+    <section>
+        <header>
+            <h1>Article-1</h1>
+        </header>    
+            <div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <p>#End of article 1</p>
+        <header>   
+            <h1>Article-2</h1>
+        </header>    
+            <div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <p>#End of article 2</p>
+    </section>
+
+    <aside class="aright">
+        <figure>
+            <img src="D:\photos\wallpapers\flat.jpg" alt="coder" height="100px" width="100px">
+        </figure>
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </aside>
+    
+    <footer>
+        <hr>
+        @Copyright-HTML_Layout2021
+    </footer>
+</body>
+</html>
